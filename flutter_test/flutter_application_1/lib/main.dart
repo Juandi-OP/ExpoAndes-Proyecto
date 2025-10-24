@@ -1,40 +1,47 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/home.dart';
+
 
 void main() {
   runApp(MaterialApp(
-    home: Scaffold(
+    home: Home()
+
+  ));
+}
+class SandBox extends StatelessWidget {
+  const SandBox({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
       appBar: AppBar(
-        title: const Text('Serpientica Programadora'),
+        title: const Text('SandBox'),
         backgroundColor: const Color.fromARGB(255, 102, 181, 250),
         centerTitle: true,
       ),
 
-      body: const Home(),
-    ),
+      body: Row(
+        crossAxisAlignment: CrossAxisAlignment.stretch,
+        mainAxisAlignment: MainAxisAlignment.center,
+        children: [
+          Container(
+            height: 100,
+            color: Colors.red,
+            child: const Text('Caja 1'),
+          ),
 
-  ));
-}
+           Container(
+            height: 200,
+            color: Colors.blue,
+            child: const Text('Caja 2'),
+          ),
 
-class Home extends StatelessWidget {
-  const Home({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return  Container(
-      color: const Color.fromARGB(255, 204, 229, 255),
-      padding: const EdgeInsets.all(20),
-      margin: const EdgeInsets.fromLTRB(10, 40, 10, 0),
-      child: const Text( 'Hola jhon bienviendio a ip ',
-        style: TextStyle(
-          fontSize: 15,
-          color: Colors.black,
-          decoration: TextDecoration.underline,
-          fontWeight: FontWeight.bold,
-          fontStyle: FontStyle.italic,
-        ),
-      ),
-
+           Container(
+            height: 300,
+            color: Colors.green,
+            child: const Text('Caja '),
+          ),
+        ],),
     );
   }
 }
-
