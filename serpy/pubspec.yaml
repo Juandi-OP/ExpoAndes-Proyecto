@@ -1,4 +1,4 @@
-name: flutter_application_1
+name: serpy
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
@@ -30,10 +30,14 @@ environment:
 dependencies:
   flutter:
     sdk: flutter
+  go_router: ^14.2.0
 
   # The following adds the Cupertino Icons font to your application.
   # Use with the CupertinoIcons class for iOS style icons.
   cupertino_icons: ^1.0.8
+  firebase_core: ^4.2.0 
+  firebase_auth: ^6.1.1
+  provider: ^6.1.2
 
 dev_dependencies:
   flutter_test:
@@ -62,6 +66,10 @@ flutter:
     - assets/img/snake.png
     - assets/img app/Background.png
     - assets/img app/logoPantallaCarga.png
+    - assets/img app/nivel1Isla.png
+    - assets/img app/nivel2Isla.png
+    - assets/img app/nivel3Isla.png
+    - assets/img app/nivel4Isla.png
   
 
   # An image asset can refer to one or more resolution-specific "variants", see

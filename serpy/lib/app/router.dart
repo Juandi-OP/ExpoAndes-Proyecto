@@ -35,7 +35,7 @@ GoRouter createAppRouter() {
         path: '/worlds',
         name: 'worlds',
         builder: (BuildContext context, GoRouterState state) {
-          return const WorldsScreen();
+          return WorldsScreen();
         },
       ),
       GoRoute(
